@@ -279,7 +279,7 @@ class TwitterAPIExchange
             CURLOPT_HEADER => false,
             CURLOPT_URL => $this->url,
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT => 10,
+            CURLOPT_TIMEOUT => 3600,
         ) + $curlOptions;
 
         if (!is_null($postfields))
